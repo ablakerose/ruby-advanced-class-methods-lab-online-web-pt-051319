@@ -28,4 +28,10 @@ class Song
     song.save
     song
   end
+
+  def self.find_by_name(string_name_of_song)
+    
+
+  end 
+  
 end
