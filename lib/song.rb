@@ -38,9 +38,9 @@ class Song
     song = self.find_by_name(string_name_of_song)
       if song == nil
         self.create_by_name(string_name_of_song)
-        song
+        
       else
-        song_already_exists
+        song
       end
   end
 
