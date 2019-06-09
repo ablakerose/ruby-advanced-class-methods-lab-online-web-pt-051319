@@ -57,43 +57,43 @@ class Song
   end
 
   def self.new_from_filename(mp3_formatted_file)
-    # Build a class constructor that accepts a filename in the 
+    # Build a class constructor that accepts a filename in the
     # format of " - .mp3", for example "Taylor Swift - Blank Space.mp3".
-    
-    # Given Song.new_from_filename("Taylor Swift - Blank Space.mp3"), 
-    # the constructor should return a new Song instance with the song 
+
+    # Given Song.new_from_filename("Taylor Swift - Blank Space.mp3"),
+    # the constructor should return a new Song instance with the song
     # name set to Blank Space and the artist_name set to Taylor Swift.
-    c = self.new 
-    c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1] 
+    c = self.new
+    c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1]
     c.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
     c
-  end 
-  
+  end
+
   def self.create_from_filename(mp3_formatted_file)
-    # Build a class constructor that accepts a filename in the 
+    # Build a class constructor that accepts a filename in the
     # format of " - .mp3", for example "Taylor Swift - Blank Space.mp3".
-    
-    # Given Song.new_from_filename("Taylor Swift - Blank Space.mp3"), 
-    # the constructor should return a new Song instance with the song 
+
+    # Given Song.new_from_filename("Taylor Swift - Blank Space.mp3"),
+    # the constructor should return a new Song instance with the song
     # name set to Blank Space and the artist_name set to Taylor Swift.
-    c = self.new 
-    c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1] 
+    c = self.new
+    c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1]
     c.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
     c.save
     c
-  end 
- 
+  end
+
   def self.all
     @@all
   end
- 
+
   def save
     self.class.all << self
   end
-  
+
   def self.destroy_all
     self.all.clear
   end
- 
+
 end
 end
