@@ -45,5 +45,6 @@ class Song
       else
         song_already_created
       end
+  end
 
 end
