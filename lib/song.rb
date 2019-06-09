@@ -36,8 +36,7 @@ class Song
 
   def self.find_or_create_by_name(find_this_song)
     song_already_created = self.all.detect do |song_name|
-      if song_name.name == find_this_song
-      end
+      song_name.name == find_this_song
       if song_already_created == nil
         song = self.new
         song.name = find_this_song
