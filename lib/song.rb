@@ -17,7 +17,7 @@ class Song
   end
 
   def new_by_name
-    
-  end 
+
+  end
 
 end
