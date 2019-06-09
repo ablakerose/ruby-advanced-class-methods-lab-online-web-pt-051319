@@ -52,7 +52,7 @@ class Song
       # which will create the name of the song.
   end
 
-  def self.alphabetical(string_name_of_song)
+  def self.alphabetical
     self.all.sort_by!{ |song| song.name}
   end
 
