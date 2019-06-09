@@ -29,8 +29,9 @@ class Song
     song
   end
 
-  def self.find_by_name(string_name_of_song)
-
+  def self.find_by_name(array_of_songs)
+    array_of_songs.detect do |song_name|
+      array_of_songs 
 
   end
   
