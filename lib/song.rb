@@ -30,7 +30,7 @@ class Song
   end
 
   def self.find_by_name(string_name_of_song)
-    array_of_songs.all.detect do |song_name|
+    self.all.detect do |song_name|
       array_of_songs.name == string_name_of_song
   end
 
