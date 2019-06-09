@@ -34,7 +34,7 @@ class Song
       song_name.name == string_name_of_song
   end
 
-  def self.find_or_create_by_name
+  def self.find_or_create_by_name(string_name_of_song)
 
   end
 
