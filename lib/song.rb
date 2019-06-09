@@ -38,6 +38,7 @@ class Song
     song_already_exists = self.find_by_name(string_name_of_song)
       if song_already_exists == nil
         self.create_by_name(string_name_of_song)
+        song
       else
         song_already_exists
       end
