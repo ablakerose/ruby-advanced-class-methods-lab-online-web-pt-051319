@@ -36,13 +36,16 @@ class Song
   end
 
   def self.find_or_create_by_name(string_name_of_song)
-    song = self.find_by_name(string_name_of_song)
-      if song == nil
-        self.create_by_name(string_name_of_song)
+    # song = self.find_by_name(string_name_of_song)
+    #   if song == nil
+    #     self.create_by_name(string_name_of_song)
+    #     
+    #   else
+    #     song
+    #   end
 
-      else
-        song
-      end
+    self.find_by_name(string_name_of_song) || self.create_by_name(string_name_of_song)
+    
   end
 
 end
