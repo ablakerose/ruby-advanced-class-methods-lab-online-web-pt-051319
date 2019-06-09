@@ -42,7 +42,7 @@ class Song
         song.save
         song
       else
-        song_already_created
+        song_already_exists
       end
   end
 
