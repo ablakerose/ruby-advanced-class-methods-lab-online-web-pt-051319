@@ -43,7 +43,7 @@ class Song
         song.name = find_this_song
         song.save
         song
-      else 
+      else
         song_already_created
       end
 
