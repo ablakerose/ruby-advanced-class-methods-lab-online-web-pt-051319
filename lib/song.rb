@@ -37,8 +37,8 @@ class Song
   def self.find_or_create_by_name(string_name_of_song)
     self.all.detect do |song_name|
       if song_name.name == string_name_of_song
-        
-      else 
+
+      else
         song = self.new
         song.name = string_name_of_song
         song.save
