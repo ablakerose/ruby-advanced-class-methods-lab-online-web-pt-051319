@@ -31,8 +31,8 @@ class Song
 
   def self.find_by_name(array_of_songs)
     array_of_songs.detect do |song_name|
-      array_of_songs 
+      array_of_songs
 
   end
-  
+
 end
