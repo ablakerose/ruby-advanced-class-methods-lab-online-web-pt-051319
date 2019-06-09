@@ -53,7 +53,7 @@ class Song
   end
 
   def self.alphabetical(string_name_of_song)
-    
+    song = self.new
   end
 
 end
