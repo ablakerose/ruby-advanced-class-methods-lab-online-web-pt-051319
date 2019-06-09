@@ -40,7 +40,7 @@ class Song
 
       else
         song = self.new
-        song.name = string_name_of_song
+        song.name = find_this_song
         song.save
         song
       end
