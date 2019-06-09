@@ -56,7 +56,6 @@ class Song
     self.all.sort_by do |song_alphabetical|
       song_alphbaetical.name
     end
-    self.all.sort_by { |x| x.name}
   end
 
 end
