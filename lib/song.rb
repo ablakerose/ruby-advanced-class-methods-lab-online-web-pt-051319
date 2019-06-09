@@ -35,7 +35,7 @@ class Song
   end
 
   def self.find_or_create_by_name(string_name_of_song)
-    song_already_exists = self.find_by_name(find_this_song)
+    song_already_exists = self.find_by_name(string_name_of_song)
       if song_already_exists == nil
         song = self.new
         song.name = find_this_song
