@@ -52,4 +52,8 @@ class Song
       # which will create the name of the song.
   end
 
+  def self.alphabetical(string_name_of_song)
+    
+  end
+
 end
